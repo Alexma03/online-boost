@@ -1,0 +1,10 @@
+.typed-cursor {
+  @apply sm:text-xl md:text-2xl lg:text-3xl;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .typed-cursor {
+    display: none;
+  }
+}

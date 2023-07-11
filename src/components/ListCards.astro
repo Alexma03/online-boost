@@ -1,0 +1,17 @@
+---
+import Card from "./Card";
+import { cards } from "../data/cards";
+---
+
+<ul>
+  {
+    cards.map((card) => (
+      <Card
+        id={card.id}
+        title={card.title}
+        description={card.description}
+        img={card.img}
+      />
+    ))
+  }
+</ul>

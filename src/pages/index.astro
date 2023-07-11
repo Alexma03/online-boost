@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Text from "../components/Text";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import ListCards from "../components/ListCards.astro";
+import AgendarLlamada from "../components/AgendarLlamada";
+import CardImg from "../components/CardImg.jsx";
+---
+
+<Layout title="Online Boost">
+  <Header client:load />
+  <Hero client:load />
+  <h3 class="text-center md:text-3xl sm:text-2xl py-6 text-xl font-semibold">
+    Conócenos
+  </h3>
+  <ListCards />
+  <AgendarLlamada />
+  <Text />
+  <CardImg />
+  <Contact />
+  <Footer />
+</Layout>

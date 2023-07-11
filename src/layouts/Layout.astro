@@ -1,0 +1,25 @@
+---
+const {
+  title = "Online Boost",
+  classNameBody,
+  classNameMain,
+  styleMain,
+  styleBody,
+} = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="view-transition" content="same-origin" />
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <title>{title}</title>
+  </head>
+  <body class={classNameBody} style={styleBody}>
+    <main class={classNameMain} style={styleMain}>
+      <slot />
+    </main>
+  </body>
+</html>
