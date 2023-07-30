@@ -24,7 +24,7 @@ function Header() {
           <a href="/sobre-nosotros">Sobre Nosotros</a>
         </li>
         <li className="hover:bg-gray-200 px-2 py-1 rounded-md transition duration-200 text-center">
-          <a href="/nuestro-equipo">Nuestro Equipo</a>
+          <a href="/nuestro-obetivo">Nuestro Objetivo</a>
         </li>
         <li className="hover:bg-gray-200 px-2 py-1 rounded-md transition duration-200 text-center">
           <a href="/nuestros-servicios">Nuestros Servícios</a>

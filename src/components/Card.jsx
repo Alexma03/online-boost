@@ -12,7 +12,7 @@ function Card({ img, title, description, id, button = "Saber más" }) {
         <Button link={id} className="ring-black ">{button}</Button>
       </div>
       <div className="md:pl-10 w-full md:w-2/3 z-10 text-center pt-10 md:pt-0">
-        <p className="font-semibold">{description}</p>
+        <p className="font-semibold text-lg">{description}</p>
       </div>
     </section>
   );

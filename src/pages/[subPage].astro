@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { subPages } from "../data/subPages.js";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+export const prerender = false;
+
+const { subPage } = Astro.params;
+
+const subPageData = subPages.find((c) => c.id === subPage);
+
+if (!subPageData) {
+  return Astro.redirect("/404");
+}
+---
+
+<Layout
+  title={subPageData.title}
+  styleBody="background-image: url('imgs/secundaria-bg.jpg'); background-size: cover; background-position: center top;"
+>
+  <Header />
+  <div
+    class="h-screen flex flex-col text-center gap-10 md:gap-20 sm:px-10 md:px-32 lg:px-52 xl:px-56 2xl:px-96"
+  >
+    <h1 class="text-6xl font-bold md:mt-20">{subPageData.title}</h1>
+    <p
+      class="text-lg mx-10 md:text-2xl font-medium text-left">
+      {subPageData.description}
+    </p>
+  </div>
+  <Footer />
+</Layout>

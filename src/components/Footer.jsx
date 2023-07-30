@@ -18,7 +18,7 @@ function Footer() {
         <div className="flex flex-col">
           <a href="/">Home</a>
           <a href="/sobre-nosotros">Sobre Nosotros</a>
-          <a href="/nuestro-equipo">Nuestro Equipo</a>
+          <a href="/nuestro-obetivo">Nuestro Objetivo</a>
           <a href="/nuestros-servicios">Nuestros Servicios</a>
         </div>
         <div className="flex flex-col">
